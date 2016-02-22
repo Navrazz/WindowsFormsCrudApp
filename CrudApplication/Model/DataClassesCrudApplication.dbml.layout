@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesCrudApplication">
+  <DataContextMoniker Name="/DataClassesCrudApplicationDataContext" />
+  <nestedChildShapes>
+    <classShape Id="aecbbe88-aee8-4df4-a0c0-f009ca46859c" absoluteBounds="3.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesCrudApplicationDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b350c60-fcd8-45a8-90c4-2de23773b33d" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06bd14aa-7b6c-40eb-9523-aed8f1b4524b" absoluteBounds="0.75, 5.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DataClassesCrudApplicationDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ead0acd6-e68a-43a4-b45f-1c71085e9b79" absoluteBounds="0.765, 5.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98ea4563-b58b-4059-b9c4-986647f224a2" absoluteBounds="0.75, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesCrudApplicationDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8599be79-7851-4de2-bd66-027fafba2eae" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.39505126953125); (4.5 : 6.39505126953125); (4.5 : 2.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesCrudApplicationDataContext/User/User_Order" />
+      <nodes>
+        <classShapeMoniker Id="06bd14aa-7b6c-40eb-9523-aed8f1b4524b" />
+        <classShapeMoniker Id="aecbbe88-aee8-4df4-a0c0-f009ca46859c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.81814697265625); (3.5 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesCrudApplicationDataContext/Product/Product_Order" />
+      <nodes>
+        <classShapeMoniker Id="98ea4563-b58b-4059-b9c4-986647f224a2" />
+        <classShapeMoniker Id="aecbbe88-aee8-4df4-a0c0-f009ca46859c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
